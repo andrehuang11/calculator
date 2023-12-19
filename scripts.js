@@ -1,5 +1,3 @@
-let display_value;
-
 function sum(a , b) {
     return a + b;
 };
@@ -25,18 +23,6 @@ function display(digit) {
         document.getElementById("output").innerHTML += digit;
     };
 };
-
-document.querySelectorAll('button').forEach(el =>{
-    el.addEventListener('click', () =>{
-        display(el.textContent);
-        if (el.className === "key equal") {
-            console.log("Enter"); 
-            let x = document.getElementById("output").textContent 
-            console.log(x); 
-            display_result(); 
-        };
-    });
-});
 
 function tokenize(s) {
     const r = [];
@@ -91,3 +77,15 @@ function display_result() {
     let y = operate(tokenize(x)) 
     document.getElementById("output").innerHTML = y 
 }; 
+
+document.querySelectorAll('button').forEach(el =>{
+    el.addEventListener('click', () =>{
+        display(el.textContent);
+        if (el.className === "key equal") {
+            console.log("Enter"); 
+            let x = document.getElementById("output").textContent 
+            console.log(x); 
+            display_result(); 
+        };
+    });
+});
