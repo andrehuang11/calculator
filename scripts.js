@@ -1,3 +1,5 @@
+let display_value;
+
 function sum(a , b) {
     return a + b;
 };
