@@ -14,8 +14,6 @@ function divide(a , b) {
     return a / b;
 };
 
-let first, second, operator;
-
 function display(digit) {
     if (digit == "C") {
         document.getElementById("output").innerHTML = "0";
